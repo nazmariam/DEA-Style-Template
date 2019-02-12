@@ -23,45 +23,6 @@
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 
-    <style>
-        body.loading .spinner-container,
-        body.focus-form .spinner-container{
-            /*opacity: !important;*/
-            display: none!important;
-        }
-
-        body.loading::before {
-            content: "Stiamo inviando l'ordine...";
-            color: #FFF;
-            display:block;
-            text-align:center;
-            height: 100px;
-            line-height: 100px;
-            position:fixed;
-            z-index:9999;
-            font-size:40px;
-            width:100%;
-            top:50%;
-            margin-top:-50px;
-        }
-        body.loading::after {
-            content: ' ';
-            position: fixed;
-            z-index: 999;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            background: rgba(0,0,0,0.8);
-            display: block;
-        }
-
-        body.loading {
-            position: relative;
-        }
-    </style>
-
-
 </head>
 <body>
 <main>
@@ -80,6 +41,9 @@
                 <div class="row">
                     <div class="col-md-7">
                         <img src="images/prod.png" alt="product image">
+                        <div class="button-wrapper mobile-visible">
+                            <a href="#AnchorOrderForm" class="standard-button"><b>Ordina Ora!</b><span>(PIÙ DI 13’745 CLIENTI SODDISFATTI)</span></a>
+                        </div>
                     </div>
                     <div class="col-md-5">
                         <div id="AnchorOrderForm"></div>
@@ -835,7 +799,7 @@
             <h2>It is a long established </h2>
             <div class="row goods-row">
 
-                <div class="col-md-3 col-sm-12 col-xs-12 pd-left">
+                <div class="col-md-3">
                     <div class="block-bag">
                         <div class="bag-wrapper">
                             <div class="bag-block circle-check first">
@@ -846,7 +810,7 @@
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-12 col-xs-12">
+                <div class="col-md-3">
                     <div class="block-bag">
                         <div class="bag-wrapper">
                             <div class="bag-block circle-check second">
@@ -857,7 +821,7 @@
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. dummy text ever since the 1500s</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-12 col-xs-12 pd-right">
+                <div class="col-md-3">
                     <div class="block-bag">
                         <div class="bag-wrapper">
                             <div class="bag-block circle-check third">
@@ -868,7 +832,7 @@
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. dummy text ever since the 1500s</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-12 col-xs-12 pd-right">
+                <div class="col-md-3">
                     <div class="block-bag">
                         <div class="bag-wrapper">
                             <div class="bag-block circle-check">
@@ -1840,104 +1804,10 @@
     </section>
 </main>
 
-<script type="text/javascript">
-    (function(d, src, c) { var t=d.scripts[d.scripts.length - 1],s=d.createElement('script');s.id='la_x2s6df8d';s.async=true;s.src=src;s.onload=s.onreadystatechange=function(){var rs=this.readyState;if(rs&&(rs!='complete')&&(rs!='loaded')){return;}c(this);};t.parentElement.insertBefore(s,t.nextSibling);})(document,
-        'https://prodottomagico.ladesk.com/scripts/track.js',
-        function(e){ LiveAgent.createButton('620e358e', e); });
-</script>
-<!-- End of LiveChat code -->
-
-
-
-
-
-<style>
-    .ebook-block{
-        width:100%;
-        max-width: 800px;
-        text-align:center;
-        margin: 25px auto 10px;
-    }
-    .ebook-coupon {
-        margin:15px;
-        padding:30px;
-        border: 5px dashed #F20;
-    }
-    .ebook-left {
-        float:left;
-        width:30%;
-    }
-    .ebook-right {
-        float:right;
-        width:60%;
-    }
-    .ebook-block h2 {
-        font-weight:bold;
-        font-size: 28px;
-
-    }
-    .ebook-right  span.ebook-title {
-        display: block;
-        text-align: center;
-        font-size: 35px;
-        font-weight: bold;
-    }
-
-    .ebook-right  span.ebook-real-price {
-        display: block;
-        font-size: 30px;
-        margin: 15px;
-        color: #F20;
-    }
-    .ebook-right  span.ebook-price {
-        display: block;
-        font-size: 30px;
-        margin: 15px;
-        font-weight:bold;
-    }
-</style>
-
 <div class="icon-bar">
     <a href="#AnchorOrderForm" class="acquista-btn">Acquista Ora</a>
 
 </div>
-
-
-<style type="text/css">
-    .icon-bar {
-        position: fixed;
-        top: 30%;
-        right: 0px;
-        margin-right: -50px;
-        background-color: #7E7E7E;
-        font-size: 20px;
-        border: 1px solid #000000;
-        -moz-transform:rotate(-90deg);
-        -ms-transform:rotate(-90deg);
-        -o-transform:rotate(-90deg);
-        -webkit-transform:rotate(-90deg);
-        z-index: 999;
-    }
-
-    .icon-bar a {
-        display: block;
-        text-align: center;
-        padding: 10px;
-        transition: all 0.3s ease;
-        color: white;
-        font-size: 19px;
-        font-weight: 600;
-    }
-
-    .icon-bar a:hover {
-        background-color: #000;
-    }
-    .acquista-btn{}
-</style>
-<!-- End Acquista Ora -->
-
-
-
 
 <div id="brandloterms" style="text-align: left; font-size: 13px;">
 
@@ -1946,41 +1816,5 @@
 
 </div>
 
-
-<script>
-    jQuery(document).ready(function(){
-        var lFollowX = 0,
-            lFollowY = 0,
-            x = 0,
-            y = 0,
-            friction = 1 / 10;
-
-        function moveBackground() {
-            x += (lFollowX - x) * friction;
-            y += (lFollowY - y) * friction;
-
-            translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
-
-            $('.price').css({
-                '-webit-transform': translate,
-                '-moz-transform': translate,
-                'transform': translate
-            });
-
-            window.requestAnimationFrame(moveBackground);
-        }
-
-        $(window).on('mousemove click', function(e) {
-
-            var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
-            var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
-            lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
-            lFollowY = (10 * lMouseY) / 100;
-
-        });
-
-        moveBackground();
-    })
-</script>
 </body>
 </html>

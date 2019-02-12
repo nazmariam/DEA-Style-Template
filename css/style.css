@@ -1365,7 +1365,8 @@ justify-content: space-between;
       right: 17%;
       top: -64px; }
     .about-goods .button-wrapper {
-      padding: 0 0 35px; }
+      padding: 0 0 35px;
+        margin: 0 auto;}
     .about-goods .timer-wrapper {
       margin-bottom: 0;text-align: center; }
     .about-goods ul {
@@ -1403,15 +1404,6 @@ justify-content: space-between;
   .video-block{
   background-image: none;}
 }
-
-
-
-
-
-
-
-
-
 
 
 /*------------one-two-three---------------------*/
@@ -1559,7 +1551,16 @@ justify-content: space-between;
 }
 
 @media(max-width: 767px){
-
+    .wrap {
+        padding: 8px 3px;
+        line-height: 40px;
+    }
+    .col-md-7 {
+        text-align: center;
+    }
+    .about-goods .formdiv{
+        margin: 0 -15px;
+    }
   form .security_box{
     padding: 0;
     display: flex;
@@ -1568,16 +1569,21 @@ justify-content: space-between;
     justify-content: space-between;
     max-width: 100%;
   }
+  .autoplay div {
+      font-size: 16px;
+  }
+    .circle-check img{
+        width:80%;
+    }
   .secureicons{
     width: 100%;
   }
   .secureicons img{
-    margin: 5px 15px;
+    margin: 5px;
   }
   .securesubmit{
     width: 100%;
     max-width: 100%;
-    background: #232323;
     padding: 15px;
   }
   .good-img {
@@ -1640,8 +1646,12 @@ justify-content: space-between;
       width: 32%;
       height: 20%;
     }
-
-
+    .goods-row {
+        flex-direction: column;
+    }
+    .first:after, .second:after, .third:after{
+        display: none;
+    }
     .comments{
         padding: 20px 0 32px
     }
