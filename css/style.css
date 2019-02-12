@@ -735,24 +735,6 @@ form .head_form {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .wrap{
   background: url(../images/or-stripe-1.png) 50% 50% no-repeat;
   background-size: cover;
@@ -765,7 +747,8 @@ form .head_form {
 
 
 .about-goods {
-
+background: url("../images/first-bg.jpg") 50% 50% no-repeat;
+  background-size: cover;
 }
 .red_text{
  color: #fe3b40;
@@ -855,12 +838,88 @@ form .head_form {
     text-align: center;
   }
   .good-img{
-    /*костыль, но полпервого...*/
+
     position: relative;
     right: -35px;
   }
 
 /*-------------------END about-gooods----------------*/
+
+/*------------------ screen grass ---------------------*/
+
+.screen-grass{
+  padding: 24px 0;
+}
+.screen-grass h2 {
+  font-weight: 900;
+  font-size: 50px;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  margin: 20px 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.grass_box{
+  margin: 0 auto 56px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.grass{
+  margin: 40px auto 102px;
+  position: relative;
+  padding: 235px 8px 4px;
+  width: 350px;
+  height: 280px;
+
+  background-size: cover;
+  text-align: center;
+}
+.tile-1{
+  background: url("../images/tile-1.png") 50% 50% no-repeat;
+}
+.tile-2{
+  background: url("../images/tile-2.png") 50% 50% no-repeat;
+}
+.tile-3{
+  background: url("../images/tile-3.png") 50% 50% no-repeat;
+}
+.tile-4{
+  background: url("../images/tile-4.png") 50% 50% no-repeat;
+}
+.tile-5{
+  background: url("../images/tile-5.png") 50% 50% no-repeat;
+}
+.tile-6{
+  background: url("../images/tile-6.png") 50% 50% no-repeat;
+}
+
+
+.g_text{
+  display: block;
+  background-color: #fff;
+  margin: -15px 8px 0;
+  box-shadow: 0 7px 20px 0 rgba(0,0,0,0.2);
+  min-height: 235px;
+  padding: 16px 8px;
+}
+.g_text h3 {
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0 0 3px;
+}
+.g_text p {
+  font-size: 20px;
+  line-height: 24px;
+}
+.screen-grass .button-wrapper {
+  text-align: center;
+  margin: 104px 0 17px;
+}
+
+/*------------------ screen grass END ---------------------*/
+
 /*-------------------screen-two----------------*/
 .screen-two {
   background: url("../images/bg-two.jpg") center no-repeat;
@@ -1371,75 +1430,7 @@ form .head_form {
 }
   /*---------------------- END bonus--------------*/
 
-/*------------------ screen grass ---------------------*/
 
-.screen-grass{
-  background: white url(../images/bg-screen-grass.jpg) center no-repeat;
-  background-size: cover;
-  padding: 24px 0;
-}
-.screen-grass h2 {
-  color: #507694;
-  font-weight: 900;
-  font-size: 30px;
-  font-family: 'Montserrat', sans-serif;
-  position: relative;
-  margin: 20px 0 50px;
-  text-align: center;
-}
-.green {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  color: #14ce4d;
-}
-.grass_box{
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.grass{
-  border: 2px solid #357796;
-  margin: 40px auto 58px;
-  position: relative;
-  padding: 77px 8px 4px;
-  width: 350px;
-  background: #fff;
-  box-shadow: 0 7px 20px 0 rgba(0,0,0,0.2);
-}
-.g_img{
-  border-radius: 50%;
-  position: absolute;
-  top: -65px;
-  width: 130px;
-  left: 50%;
-  margin-left: -65px;
-  overflow: hidden;
-}
-.g_img img{
-  width: 100%;
-}
-.g_text{
-  display: flex;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-}
-.g_text h3 {
-  font-size: 20px;
-  font-weight: 900;
-  margin: 0 0 3px;
-}
-.g_text p {
-  font-size: 18px;
-  line-height: 21px;
-}
-.screen-grass .button-wrapper {
-  text-align: center;
-  margin: 7px 0 17px;
-}
-
-/*------------------ screen grass END ---------------------*/
 /*------------------ lovers ---------------------*/
 .lovers {
   background: url("../images/lovers.jpg") center no-repeat;
